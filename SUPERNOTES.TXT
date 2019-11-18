@@ -1,0 +1,214 @@
+Ansible DHCP
+Mod dev
+    PYTHON
+    SHELL
+--------------
+New thing in Ansible -
+Dynamic INV
+
+Reference
+https://www.devopsschool.com/path/
+Complete CICD DeOps Implementation from Scratch Using Jenkins
+https://www.youtube.com/watch?v=-VaVmb_UOC8
+
+
+===============
+What is Ansible?
+-----------------------
+    Config mgmt tool
+    Written in Python
+    From REDHAT
+    VERSION
+            Ansible --> CMD LINE ---> FREE -> OPEN SOURCE
+            Tower ---> CMD + GUI ---> PAID
+    TOp 10 Community Driven Project
+    AGENT LESS......
+
+
+What is Config mgmt?
+    SERVER(S) config mgmt
+
+What is there in SERVER of what you config mgmt?
+HARDWARE    
+    RAM
+    CPU
+    storage
+            BY HYPERVIOSOR
+                            by ANsible
+
+SOFTWARE            ACTION          PROPERTIES
+    file            C D
+    directory
+    service
+    package
+    network driver
+PEOPLE
+    users
+    group
+
+PROCESSS
+    policy
+====================================
+Other tools ---
+Ansible -> Puppet -> Chef -> Cfengine -> Salt
+------------------------------------------
+Where Ansible Stands in SDLC Cycle?
+-----------------------------------------
+Prod - Infox
+Mgmr - mgrX
+---------------------------------
+        - Each Commit must go to the PRODUCTION.
+        - Quality REDEFINED
+        - Very Limited Budget
+===========================================
+Architect - JIRA - Confluence - Versio1
+Dev ---- 10 ------> 10 Module
+----------------------------------
+    Code Integ --> Git Perforce
+    Code Review -> 
+            PEER CODE Review - Code Collab, Gerrit
+            Static Code Analysis - SonarQube
+    Build mgmt --- make, 
+    Unit Test ---- PYTHON FRARMEWORK
+    Package - 
+            APP - 
+            SYS - 
+    Package Archive - 
+    -----------------------------------------------------
+    Dep 2 Staging
+    Dep 2 PRODUCTION
+    -------------------------------------
+    Infox 102.3 ---> 100 BOXES
+    --------------------------------
+    1 DEP - 9 mins
+    100 Dep - 9 mins?
+    --------------------
+        How? Parrel???
+            Ansible.
+    50 WIN - 50 LINUX
+    50 APACHE - 50 NG
+    25 TOm - 25 JB - 25 WS - 25 WL
+    25 MYSQL - 25 MSSQL - 25 ORACLE - 25 PS
+    100 DIFF
+    ----------------------
+    ANSIBLE
+
+    AT 
+
+    Code Coverage ------
+    ======================================================================
+    PLAN->CODE->BUILD->UT->PACK->Archive->Dep2QA->AT->CC
+    JIRA->GIT->ANT->JUNIT->JAR->NEXUS->ANsible->SELE->JACOC
+    ------------------------------------------------------------
+                            JENKINS
+                                        Scheduling
+                                        Feedback
+
+    CI --> EVERYTHING IS DONE AUTOMATICALLY ---> MAY PASS OR FAIL -- REPEAT
+    C Delivery --- IF CI PASS and Package is eligble for deploy to Prod
+    C Deployment ------> Directly deployed to PROD
+    --------------------------------------------------------------
+
+Why Ansible?
+        Easy to learn,share,debug, extend, Test
+        Compare to
+        Python - Java - perl 
+
+        CRoss Platform
+
+        Ideompotent
+        1 DEP ---> 10 Resources ---> 10 mins...
+        2 DEP ---> 2 RESP ------> 2 Mins.
+        ------------------------------------
+
+Ansible Architecture
+=============================================
+HUMEN---> 
+ACS ---------------------------------------> ARS
+LINUX ONLY                                  ANY OS
+64 BIT                                      32 | 64 BIT
+
+ACS                    SSH                     ARS (LINUX) 
+ACS                    WINRAM                   ARS(WINDOWS)
+PYTHON 2.7+                                     ARS(LINUX - PYTHON 2.4+) 
+                                                ARS(WINDOWS - PS3.0 + DOTNET) 
+
+============================================================================
+Roles in Ansible
+----------------------------
+Dev
+Admin
+------------------------------
+
+How to become PYTHON Programmers?
+--------------------------------------
+PYTHON -> .py      ---> Package/Module --> QA for testing/prod for implementation.   
+            ------
+            Functions
+            data types
+            expressions
+            operators
+            Conditioning
+            Looping....
+
+How to become Ansible Programmers?
+Ansible -> .yaml(playbook) -----> roles --ADMIN --> SERVERS
+-----------------------------------------
+                SERVER
+
+
+Ansible Control SERVER
+----------------------------------------------
+        Ansible -  A Software
+        Ansible Config 
+        Inventory
+        Playbook
+------------------------------------------------------
+13.233.60.141
+ubuntu
+Key
+
+How to install ANsible in Ubuntu?
+--------------------------------
+   2  apt-get update
+    3  clear
+    4  sudo apt install software-properties-common
+    5  sudo apt-add-repository --yes --update ppa:ansible/ansible
+    6  sudo apt install ansible
+    7  clear
+    8  ansible
+    9  ansible --version
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
